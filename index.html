@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070914">
+  <title>Kavya | AI Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="progress-bar" id="progressBar"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="navbar">
+    <a href="#home" class="logo"><span>KV</span><i>_</i></a>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <span id="themeIcon">☼</span>
+      </button>
+      <a href="#contact" class="nav-cta">Let's Connect ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          SYSTEM ONLINE · DEVELOPER MODE
+        </div>
+
+        <p class="eyebrow">HELLO, HUMAN. I'M</p>
+        <h1>Kavya<span class="gradient-text">.</span></h1>
+        <h2>Building the <span id="typingText">digital future</span><span class="cursor">_</span></h2>
+
+        <p class="hero-description">
+          BCA student and aspiring Full Stack Developer creating modern,
+          interactive web experiences with code, creativity, and curiosity.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button button-primary">Explore Projects <span>↗</span></a>
+          <a href="assets/resume.pdf" class="button button-outline" download>Download Resume ↓</a>
+        </div>
+
+        <div class="social-row">
+          <a href="https://github.com/kavyaG46" target="_blank" rel="noopener">GitHub ↗</a>
+          <span></span>
+          <a href="#contact">Contact Me ↗</a>
+          <span></span>
+          <p>BASED ON EARTH · BUILDING FOR THE WEB</p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-label label-top">NEURAL INTERFACE <span>v2.07</span></div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+        <div class="core">
+          <div class="core-inner">
+            <div class="core-symbol">K<span>V</span></div>
+            <div class="core-line"></div>
+            <p>CREATIVE<br>INTELLIGENCE</p>
+            <small>INITIALIZING...</small>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-one">
+          <span class="chip-icon">⌘</span>
+          <div><small>FRONTEND</small><strong>Interactive UI</strong></div>
+        </div>
+
+        <div class="floating-chip chip-two">
+          <span class="chip-icon">⌬</span>
+          <div><small>BACKEND</small><strong>Logic & Data</strong></div>
+        </div>
+
+        <div class="floating-chip chip-three">
+          <span class="pulse-dot"></span>
+          <div><small>STATUS</small><strong>Learning & Building</strong></div>
+        </div>
+
+        <div class="visual-label label-bottom">LATENCY: <span>OPTIMIZED</span></div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / INTRODUCTION</span>
+        <span class="scroll-indicator">SCROLL TO EXPLORE <b>↓</b></span>
+        <span>DESIGNED BY KAVYA</span>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 — THE HUMAN BEHIND THE CODE</p>
+        <h2>Curious mind.<br><span class="gradient-text">Builder mindset.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-panel about-card reveal">
+          <div class="panel-top"><span>PROFILE.DAT</span><span class="live-label">● ACTIVE</span></div>
+          <div class="profile-row">
+            <div class="avatar-frame">
+              <img src="assets/profile.jpeg" alt=""
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+              <div class="avatar-fallback">K</div>
+            </div>
+            <div>
+              <h3>Kavya</h3>
+              <p>Aspiring Full Stack Developer</p>
+              <span class="mini-tag">BCA · 2027</span>
+            </div>
+          </div>
+          <div class="profile-divider"></div>
+          <p class="muted">
+            I enjoy turning ideas into useful digital products, exploring
+            new technologies, and learning by building real projects.
+          </p>
+          <div class="profile-stats">
+            <div><strong>01</strong><small>CREATIVITY</small></div>
+            <div><strong>02</strong><small>CONSISTENCY</small></div>
+            <div><strong>03</strong><small>CURIOSITY</small></div>
+          </div>
+        </article>
+
+        <article class="glass-panel about-info reveal">
+          <div class="panel-top"><span>MISSION_OVERVIEW.EXE</span><span>v1.0</span></div>
+          <h3>My mission is to build things that matter.</h3>
+          <p class="muted">
+            I'm a Bengaluru University BCA student developing my skills in
+            frontend development, backend logic, databases, and data tools.
+            My goal is to become a confident Full Stack Developer.
+          </p>
+
+          <div class="info-line"><span>EDUCATION</span><strong>Bachelor of Computer Applications</strong></div>
+          <div class="info-line"><span>UNIVERSITY</span><strong>Bengaluru University</strong></div>
+          <div class="info-line"><span>GRADUATION</span><strong>Expected 2027</strong></div>
+          <div class="info-line"><span>FOCUS</span><strong>Full Stack Development</strong></div>
+
+          <a class="text-link" href="assets/resume.pdf" download>ACCESS MY RESUME <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 — MY TOOLKIT</p>
+        <h2>Technology is my <span class="gradient-text">playground.</span></h2>
+        <p class="muted">Tools and technologies I use while learning and building.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-panel glass-panel reveal">
+          <div class="skill-icon">◈</div>
+          <h3>Frontend</h3>
+          <p>Building responsive interfaces and interactive experiences.</p>
+          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="skill-meter"><span style="--level:82%"></span></div>
+        </article>
+
+        <article class="skill-panel glass-panel reveal">
+          <div class="skill-icon">⌘</div>
+          <h3>Backend</h3>
+          <p>Learning application logic, APIs, and server-side development.</p>
+          <div class="skill-tags"><span>Python</span><span>Flask</span><span>Node.js</span><span>Express</span></div>
+          <div class="skill-meter"><span style="--level:65%"></span></div>
+        </article>
+
+        <article class="skill-panel glass-panel reveal">
+          <div class="skill-icon">▦</div>
+          <h3>Databases</h3>
+          <p>Organizing data and connecting it to applications.</p>
+          <div class="skill-tags"><span>SQL</span><span>MySQL</span><span>SQLite</span></div>
+          <div class="skill-meter"><span style="--level:68%"></span></div>
+        </article>
+
+        <article class="skill-panel glass-panel reveal">
+          <div class="skill-icon">⌬</div>
+          <h3>Tools & Analytics</h3>
+          <p>Version control, programming, and data visualization.</p>
+          <div class="skill-tags"><span>Git</span><span>GitHub</span><span>Java</span><span>Excel</span><span>Power BI</span><span>REST APIs</span></div>
+          <div class="skill-meter"><span style="--level:60%"></span></div>
+        </article>
+      </div>
+      <p class="skill-note">Skill indicators are visual design elements, not formal proficiency test results.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 — SELECTED BUILDS</p>
+        <h2>Ideas transformed into <span class="gradient-text">experiences.</span></h2>
+        <p class="muted">Select any project to open an interactive demo preview.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-panel reveal">
+          <div class="project-preview finance-preview">
+            <div class="preview-header"><span>FINANCE.OS</span><span class="preview-status">● LIVE DEMO</span></div>
+            <div class="preview-balance"><small>AVAILABLE BALANCE</small><strong>₹24,850.00</strong><span>↑ Your money overview</span></div>
+            <div class="fake-chart">
+              <div style="height:35%"></div><div style="height:52%"></div>
+              <div style="height:42%"></div><div style="height:72%"></div>
+              <div style="height:56%"></div><div style="height:88%"></div>
+              <div style="height:67%"></div><div style="height:95%"></div>
+            </div>
+            <div class="preview-rows"><span>Income <b>₹32,000</b></span><span>Expenses <b>₹7,150</b></span></div>
+            <div class="preview-scan"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-number">PROJECT_01 <span>FINTECH</span></div>
+            <h3>Personal Finance Dashboard</h3>
+            <p>Track income, expenses, balances, and spending patterns through a clean dashboard concept.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <button class="button button-primary demo-button" data-demo="finance">View Demo <span>↗</span></button>
+              <a class="text-link" href="https://kavyag46.github.io/personal-finance-dashboard/">Project Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-panel reveal">
+          <div class="project-preview study-preview">
+            <div class="preview-header"><span>STUDY.AI</span><span class="preview-status">● PLANNER</span></div>
+            <div class="study-greeting"><small>YOUR FOCUS SPACE</small><strong>Make today count.</strong></div>
+            <div class="study-progress"><div><span>Weekly progress</span><b>72%</b></div><div class="progress-track"><span></span></div></div>
+            <div class="study-task"><i>✓</i><span>Revise JavaScript</span><small>30 min</small></div>
+            <div class="study-task"><i>○</i><span>Practice SQL</span><small>45 min</small></div>
+            <div class="study-task"><i>○</i><span>Review assignments</span><small>20 min</small></div>
+            <div class="preview-scan"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-number">PROJECT_02 <span>EDTECH</span></div>
+            <h3>Smart Study Planner</h3>
+            <p>Organize study tasks, plan revision sessions, and keep track of study progress.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <button class="button button-primary demo-button" data-demo="study">View Demo <span>↗</span></button>
+              <a class="text-link" href="https://kavyag46.github.io/smart-study-planner/">Project Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-panel reveal">
+          <div class="project-preview report-preview">
+            <div class="preview-header"><span>STUDENT.DB</span><span class="preview-status">● MANAGEMENT</span></div>
+            <div class="report-title">Student Report System</div>
+            <div class="report-metrics"><div><small>STUDENTS</small><strong>128</strong></div><div><small>SUBJECTS</small><strong>06</strong></div></div>
+            <div class="report-table"><span>STUDENT <b>MARKS</b><b>GRADE</b></span><span>Student A <b>87</b><b>A</b></span><span>Student B <b>76</b><b>B</b></span><span>Student C <b>92</b><b>A+</b></span></div>
+            <div class="preview-scan"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-number">PROJECT_03 <span>EDUCATION</span></div>
+            <h3>Student Report Management</h3>
+            <p>A student record and marks management project concept for organizing academic information.</p>
+            <div class="project-tech"><span>Python</span><span>SQL</span><span>CRUD</span></div>
+            <div class="project-actions">
+              <button class="button button-primary demo-button" data-demo="report">View Demo <span>↗</span></button>
+              <a class="text-link" href="https://kavyag46.github.io/Student-Report-System/">Project Details →</a>
+            </div>
+          </div>
+        </article>
+        
+<!-- PROJECT 04: NOTES STORE -->
+<article class="project-card glass-panel reveal">
+  <div class="project-preview notes-preview">
+    <div class="preview-header">
+      <span>NOTES.STORE</span>
+      <span class="preview-status">● STUDY HUB</span>
+    </div>
+
+    <div class="notes-welcome">
+      <small>YOUR LEARNING LIBRARY</small>
+      <strong>Knowledge, organized.</strong>
+      <p>Find your next study resource.</p>
+    </div>
+
+    <div class="notes-search">
+      <span>⌕</span>
+      <span>Search notes and subjects...</span>
+    </div>
+
+    <div class="notes-categories">
+      <span>ALL NOTES</span>
+      <span>COMPUTER SCIENCE</span>
+      <span>EXAM PREP</span>
+    </div>
+
+    <div class="notes-file">
+      <div class="notes-file-icon">PDF</div>
+      <div>
+        <strong>Web Development</strong>
+        <small>HTML · CSS · JavaScript</small>
+      </div>
+      <span class="notes-download">↓</span>
+    </div>
+
+    <div class="notes-file">
+      <div class="notes-file-icon">PDF</div>
+      <div>
+        <strong>Database Systems</strong>
+        <small>SQL · DBMS · Queries</small>
+      </div>
+      <span class="notes-download">↓</span>
+    </div>
+
+    <div class="preview-scan"></div>
+  </div>
+
+  <div class="project-content">
+    <div class="project-number">PROJECT_04 <span>EDTECH</span></div>
+    <h3>Notes Store</h3>
+    <p>
+      A student-friendly study resource platform concept for organizing
+      subject notes, browsing learning materials, and accessing PDF resources.
+    </p>
+
+    <div class="project-tech">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Flask</span>
+    </div>
+
+    <div class="project-actions">
+      <button
+        class="button button-primary demo-button"
+        data-demo="notes"
+      >
+        View Demo <span>↗</span>
+      </button>
+      <a class="text-link" href="#contact">Project Details →</a>
+    </div>
+  </div>
+</article>
+
+      </div>
+    </section>
+
+    <section class="section certificate-section" id="certificates">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 — LEARNING LOG</p>
+        <h2>Always in <span class="gradient-text">upgrade mode.</span></h2>
+      </div>
+      <div class="certificate-row glass-panel reveal">
+        <div class="certificate-icon">✧</div>
+        <div class="certificate-info">
+          <h3>Excel Certificate</h3>
+          <p class="muted">Certificate in Excel · Add your certificate details here.</p>
+        </div>
+        <a class="button button-outline" href="assets/excel-certificate.jpg" target="_blank" rel="noopener">View Certificate ↗</a>
+      </div>
+      <div class="certificate-row glass-panel reveal">
+        <div class="certificate-icon">✦</div>
+        <div class="certificate-info">
+          <h3>Tata × Forage — GenAI Powered Data Analytics</h3>
+          <p class="muted">Job simulation certificate · Completed October 2026.</p>
+        </div>
+        <a class="button button-outline" href="assets/genai-data-analytics-certificate.png" target="_blank" rel="noopener">View Certificate ↗</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card glass-panel reveal">
+        <p class="eyebrow">05 — ESTABLISH CONNECTION</p>
+        <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
+        <p class="muted">Open to learning opportunities, collaborations, and conversations about technology.</p>
+        <a class="button button-primary" href="mailto:kavyakavi0467@gmail.com">Send a Message ↗</a>
+        <div class="contact-email">kavyakavi0467@gmail.com</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo"><span>KV</span><i>_</i></a>
+    <p>DESIGNED & BUILT BY KAVYA · <span id="year"></span></p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <!-- Interactive project demo window -->
+  <div class="modal" id="demoModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-top">
+        <div class="window-dots"><i></i><i></i><i></i></div>
+        <span id="modalLabel">PROJECT DEMO</span>
+        <button id="closeModal" class="close-modal" aria-label="Close demo">×</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer"><span>INTERACTIVE FRONTEND PREVIEW</span><span>LOCAL DEMO · SAMPLE DATA</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
